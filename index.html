@@ -1,0 +1,793 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<style>
+		.skill-cat
+		{
+		    margin-top: 20px;
+		    min-height: 50px;
+		}
+
+		.skill-bar
+		{
+		    position: relative;
+		    height: 15px;
+		    width: 100%;
+		    background-image: linear-gradient(to bottom right, #CCCCCC, #FFFFFF);
+		    border: 2px solid #ccc;
+		    border-radius: 4px;
+		    margin-bottom: 15px;
+		}
+
+		.skill-spec
+		{
+		    position: absolute;
+		    height: 100%;
+		    background-image: linear-gradient(to bottom right, rgba(51,198,184, 1), rgba(51,198,184, 0.5));
+		    /*background-color: #33C6B8;*/
+		    border-radius: 3px;
+		    z-index: 10;
+		}
+
+		/* This code was taken from https://www.w3schools.com/css/css_tooltip.asp */
+
+		/* Tooltip text */
+		.skill-bar .tooltiptext {
+		  visibility: hidden;
+		  width: 200px;
+		  background-image: linear-gradient(to bottom right, #F8F8F8, #FFFFFF);
+		  color: #000000;
+		  text-align: center;
+		  padding: 5px;
+		  border-radius: 6px;
+		  top: -38px;
+		  right: 0;
+		  box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
+
+		  /* Position the tooltip text - see examples below! */
+		  position: absolute;
+		  z-index: 10;
+		}
+
+		/* Show the tooltip text when you mouse over the tooltip container */
+		.skill-bar:hover .tooltiptext {
+		  visibility: visible;
+		}
+		/* end of the text taken from w3schools*/
+		/* Apply flexbox to the container */
+        .topics-container {
+            display: flex;
+            flex-wrap: wrap; /* Wrap to a new line if content overflows */
+        }
+
+        /* Style each topic/subtopic item */
+        .topic {
+        	position: relative;
+            flex: 1; /* Distribute space evenly within the container */
+            margin: 10px; /* Add margin for spacing between items */
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+	</style>
+	<head>
+		<title>Anisha Vijayan</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Anisha Vijayan</h1>
+								<p>Passionate data scientist with a Master's in Business Analytics, combining academic excellence with practical experience to drive data-driven innovation and decision-making.</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">Projects</a></li>
+								<li><a href="#work">Skills</a></li>
+								<li><a href="#about">About Me</a></li>
+								<li><a href="#contact">Contact</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">Projects</h2>
+								<!--span class="image main"><img src="images/pic01.jpg" alt="" /></span-->
+								<div class="topics-container">
+									<div class = "topic">
+										<h3>Demand Forecasting for Capital Bikeshare using AWS SageMaker</h3>
+										<h4>SKILLS: AWS, Python, Regression, XGBoost</h4>
+										<span class="image main"><img src="images/aws.png" alt="" /></span>
+										<ul>
+											<li>Built, trained and deployed a model to forecast various parameters, such as demand and user engagement using cloud-based solutions,  including AWS SageMaker for model development, training, and deployment, AWS Elastic Container Registry for sourcing the XGBoost model, AWS S3 for data and model artifact storage, AWS Lambda for invoking model endpoints via the REST API, and AWS API Gateway for efficient data handling during model deployment.</li>
+										</ul>
+										<a href="https://github.com/avijay24/Bike-Rental-Demand-Forecasting-using-AWS-SageMaker" class="button primary">Code</a>		
+									</div>
+								
+									<div class = "topic">
+										<h3>Web-Deployed Content-Based Film Recommender Engine  </h3>
+										<h4>SKILLS: Python, Streamlit, Recommender Systems</h4>
+										<span class="image main"><img src="images/streamlit.png" alt="" /></span>
+										<ul>
+											<li>Utilized the TMDB dataset to develop a content-based movie recommendation system and launched it through Streamlit.</li>
+
+										</ul>
+										<a href="https://github.com/avijay24/Movie-Recommender-Web-Application-using-Streamlit" class="button primary">Code</a>		
+									</div>
+								</div>
+								<div class="topics-container">
+									<div class = "topic">
+										<h3> Urgent Mobile Application For IYKA </h3>
+										<h4>SKILLS: Python, LSTMs, ARIMA, Moving Average, KNNImputer, Kivy</h4>
+										<span class="image main"><img src="images/urgent.png" alt="" /></span>
+										<ul>
+											<li>Created a mobile application for IYKA that recommends the nearest and lowest wait time urgent care facilities based on 3 important factors: distance, wait time & commute time. The application utilized the Kivy library in Python, further enhanced with machine learning logic to predict wait times, utilizing OSRM API to estimate real time traffic, and Geopy API to extract location details, and TOPSIS algorithm for facility ranking.</li>
+										</ul>
+										<a href="https://github.com/avijay24/MyUrgentApp" class="button primary">Code</a>		
+									</div>
+								
+									<div class = "topic">
+										<h3> Customer Churn Predictions Using Classification Analysis </h3>
+										<h4>SKILLS: Python, Pandas, Numpy, Scikit-Learn</h4>
+										<span class="image main"><img src="images/churn.png" alt="" /></span>
+										<ul>
+											<li>Conducted classification analysis for predicting customer churn in a telecommunications company by addressing data imbalance, hyperparameter tuning and comparing multiple models including logistic regression, SVM (Support Vector Machine), K-nearest neighbor, and Random Forest classifier, ultimately getting the best performance with Random Forest classifier, yielding an 85% accuracy and 82% precision rate.</li>
+										</ul>
+										<a href="https://github.com/avijay24/Customer-Churn-Predictions-Using-Classification-Analysis" class="button primary">Code</a>		
+									</div>
+								</div>
+								<div class="topics-container">
+									<div class = "topic">
+										<h3> Aerial Object Detection with Improved Models and Processes </h3>
+										<h4>SKILLS: Python, PyTorch, YOLOv5, SAHI, Faster RCNN, Object Detection, Github</h4>
+										<span class="image main"><img src="images/yolo.png" alt="" /></span>
+										<ul>
+											<li>Fine-tuned state-of-the-art models like Faster R-CNN and YOLOv5, employing techniques including data augmentation, transfer learning, and region proposal methods, ultimately achieving a remarkable mAP of 0.43 in the YOLOv5 model by tiling images and applying the Strategic Aerial Homogenization for Inference (SAHI) approach during inference for aerial object detection.</li>
+										</ul>
+										<a href="https://github.com/avijay24/AerialObjectDetection_FasterRCNN_YOLOv5_on_DOTA" class="button primary">Code</a>		
+									</div>
+								
+									<div class = "topic">
+										<h3> Predicting Online News Popularity </h3>
+										<p></p>
+										<h4>SKILLS: Python, Pandas, Numpy, Scikit-Learn, Naive Bayes, Logistic Regression, KNN, SVM, PCA, Cost Matrix</h4>
+
+										<span class="image main"><img src="images/news.png" alt="" /></span>
+										<ul>
+											<li>Created a predictive model for assessing the popularity of online news articles on Mashable by comparing multiple machine learning classification models like Naive Bayes, Logistic Regression, KNN, SVM as well as unsupervised techinques like PCA, and finally utilized the Cost-Matrix along with SVM model to project a potential profit gain of approximately $1.2M.</li>
+										</ul>
+										<a href="https://github.com/avijay24/PredictingOnlineNewsPopularity" class="button primary">Code</a>		
+									</div>
+								</div>
+								<div class="topics-container">
+									<div class = "topic">
+										<h3> In-Depth Analysis of Yelp Reviews: Text Mining and Sentiment Classification </h3>
+										<h4>SKILLS: R, Sentiment Analysis, Text Mining, Random Forest, Naive Bayes, Logistic Regression</h4>
+										<span class="image main"><img src="images/yelp.png" alt="" /></span>
+										<ul>
+											<li>Developed and compared various machine learning models, including Random Forest, Naïve Bayes, and Logistic Regression, to predict sentiment using multiple sentiment dictionaries, both individually and in combination on a vast dataset of 4.7 million Yelp restaurant reviews.</li>
+											
+										</ul>
+										<a href="https://github.com/avijay24/SentimentAnalysisonYelpReviews" class="button primary">Code</a>		
+									</div>
+								
+									<div class = "topic">
+										<h3> Advanced Loan Default Prediction and Investment Strategies in Online Lending </h3>
+										<h4>SKILLS: R, Decision Tree, Random Forest, XGBoost, GLM</h4>
+										<span class="image main"><img src="images/loan.png" alt="" /></span>
+										<ul>
+											<li>Analysed, explored, and processed data from the Lending Club online lending platform to develop predictive models decision tree models (rpart, c5.0), random forest models, xgboost models, and generalized linear models (GLM) with both lasso and ridge parameters for identifying ideal peer-to-peer (p2p) loans for client investments and to devise suitable investment strategies. Also employed rigorous data exploration techniques, including data leakage checks, outlier identification, and handling missing data, to ensure data quality and reliability for model development.</li>
+											
+										</ul>
+										<a href="https://github.com/avijay24/PredictiveAnalysisforLendingClub" class="button primary">Code</a>		
+									</div>
+								</div>
+								<div class="topics-container">
+									<div class = "topic">
+										<h3> IKEA Product Price Prediction and Analysis </h3>
+										<p></p>
+										<h4>SKILLS: Python, Pandas, Numpy, Linear Regression</h4>
+										<span class="image main"><img src="images/ikea_price_pred.png" alt="" /></span>
+										<ul>
+											<li>Conducted a comprehensive analysis of the Ikea product dataset, including data cleaning, handling missing values, feature selection, data visualization to identify correlations, patterns, and outliers within the dataset, ultimately to predict the prices of the products using a linear regression model which had the best accuracy.</li>
+											
+										</ul>
+										<a href="https://github.com/avijay24/IKEAPricePredictionAnalysis" class="button primary">Code</a>		
+									</div>
+								
+									<div class = "topic">
+										<h3> Performance Analysis of American Airlines Data 2020-21 using Tableau </h3>
+										<h4>SKILLS: Tableau, Python</h4>
+										<span class="image main"><img src="images/aa_tableau.png" alt="" /></span>
+										<ul>
+											<li>Created a Tableau-based visual dashboard to analyze American Airlines' key performance metrics, such as punctuality, delays, cancellations, flight count, total distance, hub coverage, and distance per flight, in comparison to a competitor, identifying areas for improvement and offering actionable recommendations that contributed to a significant 12% reduction in delays, demonstrating the impact of data-driven insights on improving airline performance.</li>
+										</ul>
+										<a href="https://github.com/avijay24/AnalysisofAmericanAirlinesusingTableau" class="button primary">Code</a>									
+									</div>
+								</div>
+								
+
+							</article>
+
+						<!-- Skills -->
+							<article id="work">
+								<h2 class="major">Skills</h2>
+								<p> 1 - Basic<br>2 - Novice<br>3 - Intermediate<br>4 - Advanced<br>5 - Expert<br><br> 
+					            <em>Hover cursor over bars for more information</em></p>
+								<!--span class="image main"><img src="images/pic02.jpg" alt="" /></span-->
+								<div class="topics-container">
+									<div class = "topic">
+										<h3>Programming Languages:</h3>
+										<ul>
+											<div class="skill">
+					                        	<h4>SQL - 4</h4>
+					                            <div class="skill-bar">
+					                                <div class="skill-spec" style="width: 90.0%;"></div>
+					                                <span class="tooltiptext">&gt;5 years experience</span>
+					                            </div>
+					                        </div>
+					                        <div class="skill">
+					                         	<h4>Python - 3</h4>
+					                            <div class="skill-bar">
+					                                <div class="skill-spec" style="width: 80.0%;"></div>
+					                                <span class="tooltiptext">&gt;3 years experience</span>
+					                            </div>
+					                        </div>
+					                        <div class="skill">
+					                         	<h4>R - 2</h4>
+					                            <div class="skill-bar">
+					                                <div class="skill-spec" style="width: 70.0%;"></div>
+					                                <span class="tooltiptext">2 years experience</span>
+					                            </div>
+					                        </div>
+					                    </ul>
+					                </div>
+					            
+									<div class="topic">
+										<h3>Machine Learning:</h3>
+										<ul>
+											<div class="skill">
+					                         	<h4>Supervised - 4</h4>
+					                            <div class="skill-bar">
+					                                <div class="skill-spec" style="width: 90.0%;"></div>
+					                                <span class="tooltiptext">Classification, Regression, Time Series</span>
+					                            </div>
+					                        </div>
+					                        <div class="skill">
+					                         	<h4>Unsupervised - 3</h4>
+					                            <div class="skill-bar">
+					                                <div class="skill-spec" style="width: 80.0%;"></div>
+					                                <span class="tooltiptext">K-Means, PCA, KNN</span>
+					                            </div>
+					                        </div>
+					                        <div class="skill">
+					                         	<h4>Deep Learning - 3</h4>
+					                            <div class="skill-bar">
+					                                <div class="skill-spec" style="width: 80.0%;"></div>
+					                                <span class="tooltiptext">Object Detection, CNN, PyTorch, YOLOv5, FASTER-RCNN</span>
+					                            </div>
+					                        </div>
+					                        <div class="skill">
+					                         	<h4>Natural Language Processing(NLP) - 2</h4>
+					                            <div class="skill-bar">
+					                                <div class="skill-spec" style="width: 70.0%;"></div>
+					                                <span class="tooltiptext">Sentiment Analysis, Opinion-mining, WSD, Ngrams</span>
+					                            </div>
+					                        </div>
+					                        <div class="skill">
+					                         	<h4>Recommender Systems -2</h4>
+					                            <div class="skill-bar">
+					                                <div class="skill-spec" style="width: 70.0%;"></div>
+					                                <span class="tooltiptext">Content-Based, Embeddings</span>
+					                            </div>
+					                        </div>
+					                    </ul>
+					                </div>
+					            </div>
+					            <div class="topics-container">
+									<div class="topic">
+
+						                <h3>Software Engineering:</h3>
+										<ul>
+											<div class="skill">
+						                    	<h4>Databases - 4</h4>
+						                        <div class="skill-bar">
+						                            <div class="skill-spec" style="width: 90.0%;"></div>
+						                            <span class="tooltiptext">SQL Server, Oracle 10g/11g</span>
+						                        </div>
+						                    </div>
+						                    <div class="skill">
+						                        <h4>Cloud Frameworks - 3</h4>
+						                        <div class="skill-bar">
+						                            <div class="skill-spec" style="width: 80.0%;"></div>
+						                            <span class="tooltiptext">AWS, Azure, Oracle Cloud Applications</span>
+						                        </div>
+						                    </div>
+						                    <div class="skill">
+						                        <h4>Other Applications - 3</h4>
+						                        <div class="skill-bar">
+						                         	<div class="skill-spec" style="width: 80.0%;"></div>
+						                            <span class="tooltiptext">Streamlit, Jupyter, MS Excel, Oracle EBS, SSMS</span>
+						                        </div>
+						                    </div>
+						                </ul>	
+						            </div>
+						        
+									<div class="topic">
+										<h3>Data Analysis:</h3>
+										<ul>
+											<div class="skill">
+							                    <h4>Data Wrangling - 4</h4>
+							                    <div class="skill-bar">
+							                        <div class="skill-spec" style="width: 90.0%;"></div>
+							                        <span class="tooltiptext">Pandas, Numpy</span>
+							                    </div>
+							                </div>
+							                <div class="skill">
+							                    <h4>Feature Engineering - 4</h4>
+							                    <ul>
+						                        	<li>Data Imbalance</li>
+							                        <div class="skill-bar">
+							                            <div class="skill-spec" style="width: 90.0%;"></div>
+							                            <span class="tooltiptext">Resampling, SMOTE</span>
+							                        </div>
+							                        <li>Missing Values</li>
+							                        <div class="skill-bar">
+							                            <div class="skill-spec" style="width: 90.0%;"></div>
+							                            <span class="tooltiptext">Imputation, KNNImputer</span>
+							                        </div>
+							                        <li>Feature Scaling</li>
+							                        <div class="skill-bar">
+							                            <div class="skill-spec" style="width: 90.0%;"></div>
+							                            <span class="tooltiptext">Normalization, Standardization, Log Transformation</span>
+							                        </div>
+							                        <li>Data Encoding</li>
+							                        <div class="skill-bar">
+							                            <div class="skill-spec" style="width: 90.0%;"></div>
+							                            <span class="tooltiptext">LabelEncoder, OneHotEncoder, OrdinalEncoder</span>
+							                        </div>
+							                    </ul>
+							                </div>
+							                <div class="skill">
+							                    <h4>Data Visualization - 3</h4>
+							                    <div class="skill-bar">
+							                        <div class="skill-spec" style="width: 80.0%;"></div>
+							                        <span class="tooltiptext">Matplotlib, Tableau, Power BI, SSRS</span>
+							                    </div>
+							                </div>
+							                <div class="skill">
+							                    <h4>Statistical Analysis - 3</h4>
+							                    <div class="skill-bar">
+							                        <div class="skill-spec" style="width: 80.0%;"></div>
+							                        <span class="tooltiptext">Descriptive, Inferential</span>
+							                    </div>
+							                </div>
+							            </ul>	
+							        </div>
+							    </div>							
+							</article>
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">About Me</h2>
+								<!-- span class="image main"><img src="images/pic03.jpg" alt="" /></span -->
+								<h3>Education:</h3>
+								<ul>
+									<li>Master of Science in Business Analytics | University of Illinois, Chicago, IL, USA</li>
+								   	<li>Bachelor of Engineering, Computer Science | University of Mumbai, Mumbai, India</li>
+								</ul>
+								<h3>Certifications:</h3>
+								<ul>
+									<li><a href="https://www.credly.com/badges/93fed661-14c6-4a67-9d50-71add1e48fbe/linked_in_profile">AWS Certified Cloud Practitioner</a></li>
+								   	<li><a href="https://www.credly.com/badges/90416116-b55a-4307-94f6-7cebadc0b8af?source=linked_in_profile">Microsoft Certified: Azure Fundamentals</a></li>
+								   	<li><a href="https://www.credential.net/6b5a38fc-2369-4a53-9084-dc69e6883d8d#gs.u5ayup">Incorta 5 Foundations for Developers</a></li>
+								   	<li><a href="https://www.credential.net/6b5a38fc-2369-4a53-9084-dc69e6883d8d#gs.u5ayup">Incorta 5 Fundamentals for Administrators</a></li>
+								   	<li><a href="https://www.credential.net/8bdadeb3-e7dd-4761-aa2e-ef967a473fd8#gs.ttusui">Incorta 5 Essentials for Business Analysts</a></li>
+								   	<li><a href="https://simpli-web.app.link/e/W3EYnm6oSsb">Power BI for Beginners</a></li>
+								   	<li><a href="https://www.udemy.com/certificate/UC-763347ba-0542-46c8-a36f-e7e7a07c862f/">Python (Udemy)</a></li>
+								   	<li><a href="https://www.udemy.com/certificate/UC-6f73ebfe-f535-4a11-8092-44c078dd11e9/">Microsoft SQL (Udemy)</a></li>
+								</ul>
+								
+								<h3>Professional Journey:</h3>
+								<div class="topics-container">
+									<div class="topic">
+										<h4>Technical Support Consultant</h4>
+										<p><em>Atos IT Solutions and Services A/S</em><br>
+											Jul 2014 – Feb 2015
+											<ul style="list-style-type:disc">
+												<li>Managed Oracle SCM CRM modules and led the Service Support domain.</li>
+												<li>Investigated complex business issues, achieving 100% resolution time and response time.</li>
+												<li>Raised Service Requests and collaborated with teams to handle issues effectively.</li>
+												<li>Accomplished 100% resolution time, 100% response time, and zero defect density, meeting SLAs set by clients.</li>
+											</ul>
+										</p>
+									</div>
+								</div>
+								<div class="topics-container">
+									<div class="topic">
+										<h4>Software Engineer</h4>
+										<p><em>Atos Worldline Global</em><br>
+											Mar 2015 – Sep 2017
+											<ul style="list-style-type:disc">
+												<li>Worked on major corrective and enhancement changes in multiple components, including Quality, Install Base, OM Workflow, and more.</li>
+												<li>Automated item creation processes using Quality Collection Plans and APIs, boosting efficiency by 70%.</li>
+												<li>Developed interfaces for data transfer and optimization.</li>
+												<li>Automated RMA Sales Orders, reducing manual workload.</li>
+												<li>Collaborated with cross-functional teams to bridge gaps and deliver effective solutions.</li>
+											</ul>
+										</p>
+									</div>
+								</div>
+								<div class="topics-container">
+									<div class="topic">
+										<h4>Technical Team Lead</h4>
+										<p><em>Atos Worldline Global</em><br>
+											Dec 2016 – Sep 2017
+											<ul style="list-style-type:disc">
+												<li>Mentored and led a team of 4 members, fostering a productive working environment.</li>
+												<li>Efficiently planned budgets, time, and scope for client-requested changes.</li>
+												<li>Interacted with analysts and business users, providing weekly updates on change status.</li>
+												<li>Scheduled enhancement changes, ensuring timely deliveries.</li>
+												<li>Performed version control using Git, handled incident management, and improved communication skills.</li>
+											</ul>
+										</p>
+									</div>
+								</div>
+								<div class="topics-container">
+									<div class="topic">
+										<h4>Business Technology Analyst</h4>
+										<p><em>Deloitte India (Offices of the US)</em><br>
+											Oct 2017 - Sept 2019
+											<ul style="list-style-type:disc">
+												<li>Researched and became proficient in the IBM B2B Sterling Integrator Map Editor.</li>
+												<li>Developed Mapping Requirement Specifications for multiple EDI-based transactions.</li>
+												<li>Analyzed and improved customer maps for various EDI ASN 856 transactions.</li>
+												<li>Led training sessions for new hires on IBM Sterling Integrator Map Editor.</li>
+												<li>Created over 11 BI Publisher reports covering General Ledger, Accounts Receivable, Accounts Payable, and more.</li>
+											</ul>
+										</p>
+									</div>
+								</div>
+								<div class="topics-container">
+									<div class="topic">
+										<h4>Consultant</h4>
+										<p><em>Deloitte India (Offices of the US)</em><br>
+											Sept 2019 – Nov 2019
+											<ul style="list-style-type:disc">
+												<li>Developed 15+ Business Intelligence reports on Oracle ERP Cloud to solve complex business problems.</li>
+												<li>Engineered an ETL interface using Oracle SOA Suite to seamlessly migrate data from legacy systems to Oracle Cloud, improving productivity by 70%.</li>
+												<li>Created EDI transaction mappings and devised strategic solutions using IBM B2B Sterling Integrator Map Editor.</li>
+												<li>Analyzed and optimized customer maps for various EDI ASN 856 transactions, enhancing process efficiency by 50%.</li>
+											</ul>
+										</p>
+									</div>
+								</div>
+
+								<h3>Hobbies:</h3>
+								<ul>
+									<li><strong>Dancing Enthusiast:</strong> With a Bachelor's degree in Bharatnatyam, I've embraced the world of dance. My passion extends beyond traditional Indian dance, as I've explored various styles including Salsa, Belly Dance, Bachata, and Zumba. Dancing is not just a hobby; it's a way of expressing myself through graceful movements and vibrant rhythms.</li>
+									<li><strong>Culinary Explorer:</strong>  I find joy in the art of cooking. Experimenting with new recipes and flavors is a culinary adventure I savor. My culinary journey has led me to create a small-scale food blog on Instagram, where I share my creations and passion for food as <a href="https://www.instagram.com/circumstantial_cuisinier">@circumstantial_cuisinier</a>. Join me as I explore the world of flavors, one dish at a time. </li>
+								</ul>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<ul>
+									<li>Email: tvanisha@gmail.com</li>
+								</ul>
+
+								<!--form method="post" action="send_email.php">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" required/>
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" required/>
+										</div>
+										<div class = "field">
+											<label for="subject">Subject:</label>
+    										<input type="text" name="subject" id="subject" required/>
+    									</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form-->
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/anisha-vijayan" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/avijay24" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
